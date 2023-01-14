@@ -1,0 +1,18 @@
+Client & Server
+----------------
+
+Ways to access files on a remote server
+1. RDP - Remote Desktop Protocol(for Windows)
+2. FTP - File transfer protocol
+3. SFTP - Secure FTP
+
+Pre-requisites:
+1. Authorization 
+2. Knowledge of above techniques
+
+In order to bypass above things, we can use the HTTP protocol and enable access to the files through the means of a web/HTTP server - for eg Apache server. 
+
+Difference between application server & web server
+--------------------------------------------------
+
+App server enables clients to execute .class files and access the result, whereas a web server grants access to static HTML files rendered by browsers. Another difference is the executable files need a container (Java EE) for executing them on the remote web server.
