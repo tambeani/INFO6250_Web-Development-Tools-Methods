@@ -1,0 +1,17 @@
+Common Gateway Interface (CGI)
+------------------------------
+
+Common Gateway Interface (CGI) is an interface that enables web servers to execute an external program, typically to process user requests. To execute a program on a remote server we use CGI available on the server. In practice, CGI would recieve a request, create a process, generate & send a response and terminate the process. This practice was inefficient for a website hosted for large number of users.
+
+To work around this problem, we switch to using threads instead of processes. These threads are Light Weight Processes which can run concurrently & synchronously. A thread is usually created by another running process. Another advantage of using threads is that they are easy to create and destroy them. This also contribute to the stateless nature of a server. Thus, each request is unaware of another request. Java EE adopts the idea of having multiple threads for one process.
+
+Imp: https://www.thecrazyprogrammer.com/2018/06/difference-between-web-server-and-application-server.html
+
+Servlet
+---------
+
+Servlets are Java classes that run on Web or application server, acting as middle layer to other services. They are used to handle the request obtained from the webserver, process the request, produce the response, then send a response back to the webserver. They can read both explicit (user defined keywords) & implicit (user's IP address) data. 
+
+Servlets work on the server-side.
+
+
