@@ -18,21 +18,28 @@ public class ServletPart4 extends HttpServlet{
 		response.setContentType("text/html");
 		
 		//HttpHeaders headers = new HttpHeaders();
-		Map<String,String> parameter = request.getParameterMap();
+		Map<String,String[]> parameter = request.getParameterMap();
 		PrintWriter out = response.getWriter();
 
 		printHeaders(parameter, out);
 
 	}
 
-	public void printHeaders(Map<String,String> headers, PrintWriter out){
+	public void printHeaders(Map<String,String[]> headers, PrintWriter out){
 		out.println("<HTML>");
-		out.println("<style>table, th, td {border:1px solid black;}</style>");
+		out.println("<STYLE>table, th, td {border:1px solid black;}</STYLE");
 		out.println("<BODY>");
 		out.print("<H1>Form details</H1>");
 		out.print("<TABLE><TR><TH>name</TH><TH>value</TH></TR>");
 		for(String key:headers.keySet()){
-			out.println("<TR><TD>"+key+"</TD>" + "<TD>"+headers.get(key)+"</TD>"+"</TR>");
+			out.println("<TR><TD>"+key+"</TD><TD>");
+			for(String val:headers.get(key)){
+				 if(headers.get(key).length > 1 && !val.equals("")) 
+				 	out.println(val+",");
+				 else 
+				 	out.println(val);
+				}
+			out.println("</TD>"+"</TR>");
 		}
 		out.println("</TABLE>");
 		out.println("</BODY>");

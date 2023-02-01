@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tuition Waiver Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            h1 {
+              font-size: 35px;
+              font-weight: normal; 
+            }
+            
+            h2 {
+              font-size: 20px;
+            }
+            
+            p {
+              font-size: 16px;
+            }  
+            
+            /* table, th, td {
+              border:1px solid black;
+            } */
+
+            </style>
+    </head>
+    <body>
+        <form class="tuition-waiver-form" action="/tution.html" method="post"></form>
+            <!-- form header -->
+            <div class="form-header">
+                <h1>Northeastern University</h1>
+                <h2>Human Resources</h2>
+                <hr>
+                <p>This form is used by part-time faculty, part-time staff, retirees, their spouses or domestic partners and their dependents. 
+                    All full-time faculty and staff should use the online Tuition Waiver Form found on myNEU. Before completing this form, 
+                    please refer to the Tuition Waiver Program Guidelines. Be sure to include a Dependent Certification Form along with 
+                    the submission of this form for any dependent children.</p>
+                <hr>
+            </div>
+            <!-- form body -->
+            <div class="form-body">
+                <h2>Section 1</h2>
+                <label for="term">Academic Term:</label>
+                <input type="text" name="term">
+                &nbsp;<label for="year">Academic Year:</label>
+                <input type="text" name="year"></div></body></br>
+                </br><label for="status">Employee Status:</label>
+                <input type="checkbox" id="status" name="ptstaff" value="ptstaff"><label>P/T staff</label>
+                <input type="checkbox" id="status" name="ptfaculty" value="ptfaculty"><label>P/T faculty</label>
+                <input type="checkbox" id="status" name="ptfaculty" value="ptfaculty"><label>Retiree</label>
+                <input type="checkbox" id="status" name="ptfaculty" value="ptfaculty"><label>Other</label><br>
+                <hr><p>*Terms with multiple sessions are considered one academic term for tuition waiver purposes e.g., summer sessions I and
+                  II are considered one academic term</p><hr>
+
+                <h2>Section 2</h2>
+                <label for="name">Student's Name:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name">
+                &nbsp;<label for="relation">Relationship to Employee:</label>
+                <input type="text" name="relation">
+                &nbsp;<label for="nuid">Student’s NUID:</label>
+                <input type="text" name="nuid"></br></br>
+                <label for="employee">Employee's Name:</label>
+                <input type="text" name="employee">
+                &nbsp;<label for="emp-name">Employee’s NUID:</label>
+                <input type="text" name="emp-name"></br></br>
+                <label for="department">Department:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="department">
+                &nbsp;<label for="campus">Campus Location:</label>
+                <input type="text" name="campus">
+                &nbsp;<label for="phone">Phone Number:</label>
+                <input type="text" name="phone">
+                &nbsp;<label for="supervisor-name">Supervisor's Name:</label>
+                <input type="text" name="supervisor-name">
+
+                <h2>Section 3</h2>
+                <input type="checkbox" name="school" value="ug-program"><label>Undergraduate Program</label>
+                <input type="checkbox" name="school" value="law-school"><label>Law School</label>
+                <input type="checkbox" name="school" value="doctoral-candidate"><label>Doctoral Candidate</label>
+                </br><input type="checkbox" name="school" value="cps"><label>College of Professional Studies (CPS) Undergraduate</label>
+                <input type="checkbox" name="school" value="graduate-school"><label>Graduate School</label>
+                <input type="checkbox" name="school" value="cps-graduate-school"><label>CPS Graduate School</label></br></br>
+                <hr>One course per academic term may be taken one-half hour before the end of your workday. If this applies to you, this 
+                form must be signed by your supervisor below and approved by Human Resources Management<hr>
+                Complete the following course information. If you are an employee taking a job related course, please attach the Job 
+                Related Designation Form to this waiver. <hr>
+
+                <table style="width:100%">
+                  <tr>
+                    <th>Course No.</th>
+                    <th>Course Name</th>
+                    <th>Supervisor Signature</th>
+                    <th>Credit Hrs.</th>
+                    <th>Days(s)</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="course-no"></td>
+                    <td><input type="text" name="course-name"></td>
+                    <td><input type="file" name="supervisor-sign"></td>
+                    <td><input type="text" name="credit-hrs"></td>
+                    <td><input type="text" name="days"></td>
+                    <td><input type="text" name="time"> am/pm</td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="course-no"></td>
+                    <td><input type="text" name="course-name"></td>
+                    <td><input type="file" name="supervisor-sign"></td>
+                    <td><input type="text" name="credit-hrs"></td>
+                    <td><input type="text" name="days"></td>
+                    <td><input type="text" name="time"> am/pm</td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="course-no"></td>
+                    <td><input type="text" name="course-name"></td>
+                    <td><input type="file" name="supervisor-sign"></td>
+                    <td><input type="text" name="credit-hrs"></td>
+                    <td><input type="text" name="days"></td>
+                    <td><input type="text" name="time"> am/pm</td>
+                  </tr>
+                </table>
+
+                <h2>Section 4</h2>
+                <hr>In accordance with Northeastern University's Tuition Waiver Program Guidelines, my signature attests that I am 
+                currently enrolled in the above courses, or that the student listed above is my spouse, domestic partner or 
+                unmarried dependent child or the dependent child of my domestic partner as defined under current IRS tax 
+                regulations. I also certify that I have read the Tuition Waiver Program Guidelines<hr>
+                </br><label for="emp-sign">Employee Signature:</label>
+                <input type="file" name="emp-sign">
+                &nbsp;<label for="emp-date">Date:</label>
+                <input type="text" name="emp-date">
+
+                <h2>Section 5</h2>
+                <label for="hrm-approval">HRM Approval:</label>
+                <input type="file" name="hrm-approval">
+                &nbsp;<label for="hrm-date">Date:</label>
+                <input type="text" name="hrm-date">
+                
+            </div>
+            <!-- form footer -->
+            <div class="form-footer">
+              </br><hr>Forms will be reviewed for completeness and eligibility. You will be notified if any additional information is needed. Mail completed form to 
+              Human Resources, 250 Columbus Place or fax to (617) 373-7610. All waivers must be received by HRM within 30 days 
+              of the course start date<hr>
+            
+            </div>
+            <div style="text-align:center">  
+              </br></br><input type="submit">  
+            </div>  
+    </body>
+</html>
